@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АТРИУМ</title>
+    <link rel="shortcut icon" href="https://static.tildacdn.com/tild6239-3739-4838-a533-313039653936/_2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Логотип Атриум" class="logo">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="shops.html">Магазины</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="login-button">Войти</a>
+            <a href="register.html" class="register-button">Регистрация</a>
+        </div>
+    </header>
+    
+    <main class="about-section">
+        <h1>О нас</h1>
+        <p>Добро пожаловать в <strong>ТРЦ "Атриум"</strong> — один из самых современных и популярных торгово-развлекательных центров города, где каждый найдет что-то для себя! Мы стремимся создавать пространство, которое сочетает шопинг, развлечения и комфорт.</p>
+
+        <h2>Наши услуги</h2>
+        <ul>
+            <li><strong>Шопинг</strong>: Более 150 магазинов известных брендов.</li>
+            <li><strong>Развлечения</strong>: Кинотеатр, детские игровые зоны, боулинг, аттракционы.</li>
+            <li><strong>Рестораны и кафе</strong>: Пространство для отдыха с разнообразием кухонь мира.</li>
+            <li><strong>События и мероприятия</strong>: Мы регулярно проводим концерты, выставки и мастер-классы.</li>
+        </ul>
+
+        <h2>Почему выбирают нас?</h2>
+        <ul>
+            <li>Удобное расположение в центре города.</li>
+            <li>Современный дизайн и инфраструктура.</li>
+            <li>Широкий выбор магазинов, ресторанов и развлечений для всех возрастов.</li>
+            <li>Безопасность и комфорт для посетителей.</li>
+        </ul>
+        <br>
+        <h2 class="contact-header">Остались вопросы? Напишите нам</h2>
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Текст сообщения:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <label for="topic">Тема обращения:</label>
+            <select id="topic" name="topic">
+                <option value="general">Общие вопросы</option>
+                <option value="shopping">Шопинг</option>
+                <option value="entertainment">Развлечения</option>
+                <option value="partnership">Партнёрство</option>
+            </select>
+    
+            <fieldset>
+                <legend>Вы —</legend>
+                <label><input type="radio" name="applicant" value="visitor" required> Посетитель</label>
+                <label><input type="radio" name="applicant" value="partner"> Партнёр</label>
+            </fieldset>
+    
+            <label><input type="checkbox" name="policy" required> Я согласен с политикой конфиденциальности</label>
+    
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Все права защищены</p>
+    </footer>    
+</body>
+</html>
