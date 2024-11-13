@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="https://static.tildacdn.com/tild6239-3739-4838-a533-313039653936/_2.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../scripts/search-handler.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,6 +26,54 @@
         </div>
     </header>
     
+    <main class="shops-section">
+        <h1>Наши магазины</h1>
+
+        <!-- Search Form -->
+        <form class="search-form" onsubmit="return searchShop(event)">
+            <input type="text" id="searchInput" placeholder="Поиск магазинов..." />
+            <button type="submit">Поиск</button>
+        </form>
+
+        <!-- Shops List -->
+        <div class="shops-list">
+            <div class="shop-card">
+                <img src="../img/lacoste.jpg" alt="Lacoste">
+                <div class="shop-info">
+                    <h2>LACOSTE</h2>
+                    <p>Французский бренд одежды и аксессуаров, воплощающий элегантность и комфорт в стиле casual.</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src="../img/летуальэ.jpg" alt="Лэтуаль">
+                <div class="shop-info">
+                    <h2>Лэтуаль</h2>
+                    <p>Крупнейшая сеть парфюмерии и косметики, предлагающая широкий ассортимент товаров от мировых брендов.</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src="../img/kantata.jpg" alt="Кантата">
+                <div class="shop-info">
+                    <h2>Кантата</h2>
+                    <p>Сеть кофеен и кондитерских, где можно насладиться ароматным кофе, свежими десертами и уютной атмосферой.</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src="../img/perecrestok.jpg" alt="Перекресток">
+                <div class="shop-info">
+                    <h2>Перекресток</h2>
+                    <p>Сетевой супермаркет с широким выбором продуктов питания, бытовой химии и товаров повседневного спроса.</p>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src="../img/Sunlight.jpg" alt="Sunlight">
+                <div class="shop-info">
+                    <h2>Sunlight</h2>
+                    <p>Магазин ювелирных украшений, предлагающий изысканные изделия из золота, серебра и драгоценных камней.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 Все права защищены</p>

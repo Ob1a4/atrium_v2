@@ -25,7 +25,33 @@
         </div>
     </header>
     
+    <main>
+        <div class="registration-section">
 
+            <h1>Регистрация</h1>
+            <form class="registration-form">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Почта</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label>Пол</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Мужской</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Женский</label>
+                    </div>
+                    
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </main>
+    
     <footer>
         <p>&copy; 2024 Все права защищены</p>
     </footer>    

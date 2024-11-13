@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="https://static.tildacdn.com/tild6239-3739-4838-a533-313039653936/_2.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,10 @@
         </div>
     </header>
     
-    <main class="about-section">
+    <main >
+        <div class="about-section">
+
+        
         <h1>О нас</h1>
         <p>Добро пожаловать в <strong>ТРЦ "Атриум"</strong> — один из самых современных и популярных торгово-развлекательных центров города, где каждый найдет что-то для себя! Мы стремимся создавать пространство, которое сочетает шопинг, развлечения и комфорт.</p>
 
@@ -46,7 +50,7 @@
         </ul>
         <br>
         <h2 class="contact-header">Остались вопросы? Напишите нам</h2>
-        <form class="contact-form" action="#" method="post">
+        <form id="contactForm" class="contact-form" onsubmit="handleQuestion(event)">
             <label for="name">Имя:</label>
             <input type="text" id="name" name="name" required>
     
@@ -74,10 +78,11 @@
     
             <button type="submit">Отправить</button>
         </form>
-    </main>
-
+    </div>
+    
     <footer>
         <p>&copy; 2024 Все права защищены</p>
     </footer>    
+</main>
 </body>
 </html>
